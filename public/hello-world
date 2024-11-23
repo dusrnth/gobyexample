@@ -11,6 +11,10 @@
               return;
           }
           
+          if (e.key == "ArrowLeft") {
+              window.location.href = 'type';
+          }
+          
           
           if (e.key == "ArrowRight") {
               window.location.href = 'values';
