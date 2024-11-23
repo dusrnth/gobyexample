@@ -14,11 +14,12 @@ func main() {
 	// elements they contain (not the number of elements).
 	// An uninitialized slice equals to nil and has
 	// length 0.
-	var s []string // nill 이기도 하고, length 가 0 이기도하지만, append 가 가능
+	var s []string
 	fmt.Println("uninit:", s, s == nil, len(s) == 0)
 
-	s = append(s, "A") // 크기를 지정하지 않아도 append 로 추가 가능
-	fmt.Println("appended value to nil slice ", s, s == nil, len(s) == 0)
+	// 크기를 지정하지 않아도 append 로 추가 가능
+	s = append(s, "A")
+	fmt.Println("appended va ", s, s == nil, len(s) == 0)
 
 	// To create an empty slice with non-zero length, use
 	// the builtin `make`. Here we make a slice of
